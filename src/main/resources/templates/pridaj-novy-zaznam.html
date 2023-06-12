@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pridaj novy zaznam</title>
+</head>
+<body>
+<form action="#" method="POST" th:action="@{/uloz-zaznam}" th:object="${trickoObjektThymeleaf}">
+    Farba <input type="text" th:field="*{farba}"><br>
+    Velkost <input type="text" th:field="*{velkost}"><br>
+    Meno zákaznika <input type="text" th:field="*{menoZakaznika}"><br>
+    <button type="submit">Ulož záznam</button>
+</form>
+
+</body>
+</html>
